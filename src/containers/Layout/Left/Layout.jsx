@@ -109,10 +109,10 @@ class LayoutLeftMode extends React.Component {
               :
               ''
           }
-          <Layout style={dyncStyle}>
+          <Layout id="scroll"style={dyncStyle}>
             <LeftHeader {...headerProps} />
             <CommonBeard {...beardProps} />
-            <Content style={{ padding: 25 }}>
+            <Content  style={{ padding: 25 }}>
               {children}
             </Content>
             <CommonFooter />

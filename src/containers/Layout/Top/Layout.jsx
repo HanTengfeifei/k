@@ -51,7 +51,7 @@ class LayoutTopMode extends React.Component {
     // 顶部菜单拓展
     const topHeaders = [];
     topHeaders.push(
-      <SubMenu className="topRightMenu" key="user" title={<span> <Icon type="user" />Bear熊</span>}>
+      <SubMenu className="topRightMenu" key="user" title={<span> <Icon type="user" />韩腾飞</span>}>
         <Menu.Item key="profile"><Link to="/profile">资料</Link></Menu.Item>
         <Menu.Item key="logout">登出</Menu.Item>
       </SubMenu>
@@ -97,7 +97,7 @@ class LayoutTopMode extends React.Component {
 
     return (
       <div>
-        <Layout className='layout-top'>
+        <Layout id="scroll" className='layout-top'>
           <Header
             className={classnames({ 'topHeaderWhite': lightThem || false }, { 'topHeaderFixed' : headerFixed || false })}
           >

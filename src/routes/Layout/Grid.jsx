@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { Card, Col, Row } from 'antd';
+import { Card, Col, Row , BackTop} from 'antd';
 
 class GridDemo extends React.Component {
 
@@ -10,7 +10,9 @@ class GridDemo extends React.Component {
 
     return (
       <div>
+
         <Row className="grid-demo">
+
           <Col span={24} id="components-grid-demo-basic">
             <Card title={<div className={classnames('card-header', { 'yellow': true })}>
               <h4>基础格栅</h4>
@@ -140,6 +142,54 @@ class GridDemo extends React.Component {
                 <Col span={4}><DemoBox value={50}>col-4</DemoBox></Col>
                 <Col span={4}><DemoBox value={120}>col-4</DemoBox></Col>
                 <Col span={4}><DemoBox value={80}>col-4</DemoBox></Col>
+              </Row>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="grid-demo">
+          <Col span={24} id="components-grid-demo-flex-order">
+            <Card title="Flex 排序" bordered={false} hoverable>
+              <Row type="flex">
+                <Col span={6} order={4}>1 col-order-4</Col>
+                <Col span={6} order={3}>2 col-order-3</Col>
+                <Col span={6} order={2}>3 col-order-2</Col>
+                <Col span={6} order={1}>4 col-order-1</Col>
+              </Row>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="grid-demo">
+          <Col span={24} id="components-grid-demo-flex-order">
+            <Card title="Flex 排序" bordered={false} hoverable>
+              <Row type="flex">
+                <Col span={6} order={4}>1 col-order-4</Col>
+                <Col span={6} order={3}>2 col-order-3</Col>
+                <Col span={6} order={2}>3 col-order-2</Col>
+                <Col span={6} order={1}>4 col-order-1</Col>
+              </Row>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="grid-demo">
+          <Col span={24} id="components-grid-demo-flex-order">
+            <Card title="Flex 排序" bordered={false} hoverable>
+              <Row type="flex">
+                <Col span={6} order={4}>1 col-order-4</Col>
+                <Col span={6} order={3}>2 col-order-3</Col>
+                <Col span={6} order={2}>3 col-order-2</Col>
+                <Col span={6} order={1}>4 col-order-1</Col>
+              </Row>
+            </Card>
+          </Col>
+        </Row>
+        <Row className="grid-demo">
+          <Col span={24} id="components-grid-demo-flex-order">
+            <Card title="Flex 排序" bordered={false} hoverable>
+              <Row type="flex">
+                <Col span={6} order={4}>1 col-order-4</Col>
+                <Col span={6} order={3}>2 col-order-3</Col>
+                <Col span={6} order={2}>3 col-order-2</Col>
+                <Col span={6} order={1}>4 col-order-1</Col>
               </Row>
             </Card>
           </Col>

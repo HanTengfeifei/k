@@ -56,7 +56,7 @@ const LeftModeHeader = ({ siderFold, siderRespons, lightThem, siderOpenKeys, men
             :
             ''
         }
-        <SubMenu title={<span> <Icon type="user" />Bear熊</span>}>
+        <SubMenu title={<span> <Icon type="user" />韩腾飞</span>}>
           <Menu.Item key="profile">
             <Link to="/profile">资料</Link>
           </Menu.Item>

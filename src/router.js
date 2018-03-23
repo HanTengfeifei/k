@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Router, Switch, Route, Redirect } from 'dva/router';
 import dynamic from 'dva/dynamic';
 import { LocaleProvider, Spin } from 'antd';
+import login1 from  './routes/Pages/Login';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 
 import App from './containers/App';
@@ -19,8 +20,51 @@ const Routers = function ({ history, app }) {
       component: () => import('./routes/Dashboard/Dashboard1'),
     },
     {
+      path: '/test',
+      component: () => import('./routes/Test/All'),
+    },
+    {
+      path: '/AddTest',
+      component: () => import('./routes/Test/AddTest'),
+    },
+    {
+      path: '/AddVideo',
+      component: () => import('./routes/Video/AddVideo'),
+    },
+    {
+      path: '/AddAudio',
+      component: () => import('./routes/Audio/AddAudio'),
+    },
+    {
+      path: '/tts',
+      component: () => import('./routes/Tts/Tts'),
+    },
+    { path: '/for',
+      component: () => import('./routes/For/For'),
+  },
+    {
+      path: '/example',
+      component: () => import('./routes/Example/Example'),
+    },
+    {
+      path: '/Clause',
+      component: () => import('./routes/Doc/Clause/Clause'),
+    },
+    {
       path: '/dashboard2',
       component: () => import('./routes/Dashboard/Dashboard2'),
+    },
+    {
+    path: '/translate',
+      component: () => import('./routes/Translate/Translate'),
+  },
+    {
+      path: '/audio',
+      component: () => import('./routes/Audio/Audio'),
+    },
+    {
+      path: '/video',
+      component: () => import('./routes/Video/Video'),
     },
     {
       path: '/mail',
@@ -34,10 +78,10 @@ const Routers = function ({ history, app }) {
       path: '/blank',
       component: () => import('./routes/Pages/Blank'),
     },
-    {
-      path: '/login',
-      component: () => import('./routes/Pages/Login'),
-    },
+    // {
+    //   path: '/login',
+    //   component: () => import('./routes/Pages/Login'),
+    // },
     {
       path: '/signup',
       component: () => import('./routes/Pages/Signup'),
@@ -292,9 +336,12 @@ const Routers = function ({ history, app }) {
   return (
     <LocaleProvider locale={zhCN}>
       <Router history={history}>
+        <Switch>
+          <Route exact path="/"  component={login1}/>
+
         <App>
           <Switch>
-            <Route exact path="/" render={() => (<Redirect to="/dashboard1" />)} />
+            {/*<Route exact path="/" render={() => (<Redirect to="/login" />)} />*/}
             {
               routes.map(({ path, ...dynamics }, key) => (
                 <Route
@@ -311,6 +358,7 @@ const Routers = function ({ history, app }) {
             <Route component={Notfound} />
           </Switch>
         </App>
+        </Switch>
       </Router>
     </LocaleProvider>
   )

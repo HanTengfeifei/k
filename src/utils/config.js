@@ -1,10 +1,10 @@
-const blackLogo = require('../assets/img/logo-bear-black.png');
-const whiteLogo = require('../assets/img/logo-bear-white.png');
+const blackLogo = require('../assets/img/logo.png');
+const whiteLogo = require('../assets/img/logo.png');
 
 module.exports = {
-  name: 'Bear admin',
+  name: '英语辅助学习系统',
   blackLogoSrc: blackLogo,
   whiteLogoSrc: whiteLogo,
-  logoText: 'Bear Admin',
-  footerText: '感谢开源社区和开源项目作者们很棒的想法和成果'
+  logoText: '英语辅助学习系统',
+  footerText: '时代是出卷人,我们是答卷人,客户是阅卷人'
 }

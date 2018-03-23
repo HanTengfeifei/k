@@ -8,7 +8,9 @@ import './Login.less';
 const Login = () => {
 
   const handleLogin = () => {
-    hashHistory.push('/')
+    // hashHistory.push('/')
+
+    window.location.href="#example";
   }
 
   return (
