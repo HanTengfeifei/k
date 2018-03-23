@@ -1,26 +1,4 @@
-![](https://github.com/huzzbuzz/bear-admin/blob/master/screenshot/logo-bear-black.jpg)                   
 
-[![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](http://opensource.org/licenses/MIT)
-![](https://img.shields.io/badge/language-javascript-orange.svg)
-<!--[![](https://travis-ci.org/huzzbuzz/bear-admin.svg?branch=master)](https://travis-ci.org/huzzbuzz/bear-admin)-->        
-
-[![create-react-app](https://img.shields.io/badge/create--react--app-%5E1.0.13-3b5998.svg)](https://github.com/facebookincubator/create-react-app)
-[![React](https://img.shields.io/badge/react-%5E16.2.0-brightgreen.svg?style=flat-square)](https://github.com/facebook/react)
-[![Ant Design](https://img.shields.io/badge/ant--design-%5E3.0.0-brightgreen.svg?style=flat-square)](https://github.com/ant-design/ant-design)
-[![dva](https://img.shields.io/badge/dva-%5E2.1.0-brightgreen.svg)](https://github.com/dvajs/dva)             
-
-
-## [预览 Preview](http://huzzbuzz.coding.me/bear-admin/)
-
-Bear Admin，一个 JavaScript 应用，项目由业界最优秀的 React 应用开发工具 create-react-app 初始化创建， 搭配 Antd 开箱即用的高质量 React 组件和轻量级应用框架 Dva.js 一起，*非常适合后台产品*。
-
-Bear Admin 同时也是个很好的前端脚手架学习示例，如果你在学习 React 或即将学习 React，它应该可以做为教程给你一些帮助。如果你准备使用 React 全家桶开发应用，它能够快速给你提供项目脚手架，为你节省前期部分工作。 让我们一起享受整个 React 生态圈和工具链带来的愉悦开发体验。
-
-在开始之前，推荐先学习 React、 ES2015、Node.js、Webpack 等知识，并正确安装和配置了 Node.js 环境。
-
-<hr />
-
-#### [更新日志](./CHANGELOG.md)      
 
 #### 技术栈            
  👍🏻[create-react-app](https://github.com/facebookincubator/create-react-app)         
@@ -44,19 +22,24 @@ Bear Admin 同时也是个很好的前端脚手架学习示例，如果你在学
 #### 开始
 1. 克隆源码       
 ```
-git clone https://github.com/huzzbuzz/bear-admin.git
+git clone git@github.com:HanTengfeifei/k.git
 ```
 
 2. 安装依赖         
 ```
-cd bear-admin 
+cd k
 npm i or yarn
 ```
 
 3. 调试应用         
 ```
 npm start
+y
+
 ```
+cd /sever
+json-server db.json -w -p 3000
+
 
 4. 发布应用         
 ```
